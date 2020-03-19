@@ -2,8 +2,10 @@ import React from 'react'
 import {FeatureGroup, GeoJSON, LayersControl, Map, TileLayer} from 'react-leaflet';
 import axios from 'axios';
 import {CoordinatesControl} from 'react-leaflet-coordinates';
-import { BoxZoomControl } from 'react-leaflet-box-zoom'
+import {BoxZoomControl} from 'react-leaflet-box-zoom'
 import Control from 'react-leaflet-control';
+import {Button, Card, Collapse} from 'react-bootstrap';
+import {FaInfo} from "react-icons/fa";
 
 const {BaseLayer, Overlay} = LayersControl;
 
@@ -24,10 +26,9 @@ export default class MainMap extends React.Component {
             zoom: 12,
             data: [],
             collapsed: true,
-            // selected: "home",
             center: center,
+            collapseOpen: false
         };
-
     }
 
     componentDidMount() {
@@ -35,7 +36,7 @@ export default class MainMap extends React.Component {
         const dataUrl = 'https://polistes.net/idk/data.json';
         // const dataUrl = 'data.json';
 
-        axios.get(dataUrl, {params:{}}
+        axios.get(dataUrl, {params: {}}
         )
             .then(({data}) => this.setState({data}))
             .catch(error => Promise.reject(error));
@@ -103,21 +104,38 @@ export default class MainMap extends React.Component {
                         sticky={false}
                     />
 
-                    {/*<Control position="topleft" >*/}
-                    {/*    <button*/}
-                    {/*        // onClick={ () => this.setState({bounds: [51.3, 0.7]}) }*/}
-                    {/*    >*/}
+                    <Control position="topleft">
+                        <Button variant="light"
+                                onClick={() => this.setState({collapseOpen: !this.state.collapseOpen})}
+                                aria-controls="example-collapse-text"
+                                aria-expanded={this.state.collapseOpen}
+                        >
+                            <FaInfo/>
+                        </Button>
+                        <Collapse in={this.state.collapseOpen}>
+                            <Card style={{width: '16rem'}}>
+                                <Card.Body>
+                                    <Card.Title>What is Lorem Ipsum?</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">Lorem Ipsum</Card.Subtitle>
+                                    <Card.Text>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged.
+                                        It was popularised in the 1960s with the release of Letraset sheets containing
+                                        Lorem Ipsum passages,
+                                        and more recently with desktop publishing software like Aldus PageMaker
+                                        including versions of Lorem Ipsum..
+                                    </Card.Text>
+                                    {/*<Card.Link href="#">Card Link</Card.Link>*/}
+                                    {/*<Card.Link href="#">Another Link</Card.Link>*/}
+                                </Card.Body>
+                            </Card>
+                        </Collapse>
 
-                    {/*    </button>*/}
-
-                    {/*    <div>*/}
-                    {/*    <h2>What is Lorem Ipsum?</h2>*/}
-                    {/*    <p>*/}
-                    {/*    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.*/}
-
-                    {/*    </p>*/}
-                    {/*    </div>*/}
-                    {/*</Control>*/}
+                    </Control>
 
                 </Map>
             </div>
