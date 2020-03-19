@@ -8552,6 +8552,18 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.0.tgz#0f37c3613c34fe6b37cd7f763a0d6293ab15c527"
   integrity sha512-GFMtL0vHkiBv9HluwNZTggSn/sCyEt9n02aM0dSAjGGyqyNlAyftYm4phPxdvCigG15JreC5biwxCgTAJZ7yAA==
 
+react-leaflet-box-zoom@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-leaflet-box-zoom/-/react-leaflet-box-zoom-1.0.2.tgz#65da08867c65f1306e8fd3c03c8f16ee934fe4d1"
+  integrity sha512-SGXH2kk8uqs0XzlmcKZld4qcVMJdPxzOCvepACMSMPSwSGEGcBUsGXvnmv/weVdyJctO2CdmndYn/CLz4flHBA==
+  dependencies:
+    react-style-object-to-css "^1.1.2"
+
+react-leaflet-control@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-leaflet-control/-/react-leaflet-control-2.1.2.tgz#c716c5c1797375e4fd941c9e2e0c148bc34edbb0"
+  integrity sha512-xdheoLuLEeDGZ6/FKsnKjMYxC9BlyxsK5L5S27Dd6Z+FYP4jIa1Ekhu7UDgTV7GGSw+Yjjf8uofoheylxggB6w==
+
 react-leaflet-coordinates@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-leaflet-coordinates/-/react-leaflet-coordinates-1.0.1.tgz#6936a6807acce08fd3f7cf712e8f004c091c01b4"
