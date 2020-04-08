@@ -1,5 +1,5 @@
 import React from 'react'
-import {FeatureGroup, GeoJSON, LayersControl, Map, TileLayer} from 'react-leaflet';
+import {FeatureGroup, GeoJSON, LayersControl, Map, TileLayer, WMSTileLayer} from 'react-leaflet';
 import axios from 'axios';
 import {CoordinatesControl} from 'react-leaflet-coordinates';
 import {BoxZoomControl} from 'react-leaflet-box-zoom'
@@ -59,13 +59,12 @@ export default class MainMap extends React.Component {
                             />
                         </BaseLayer>
 
-                        <BaseLayer name="OSM B&W">
-                            <TileLayer
-                                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                                url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
-                            />
-                        </BaseLayer>
-
+                        {/*<BaseLayer name="OSM B&W">*/}
+                        {/*    <TileLayer*/}
+                        {/*        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'*/}
+                        {/*        url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"*/}
+                        {/*    />*/}
+                        {/*</BaseLayer>*/}
 
                         <BaseLayer name="ESRI Imagery">
                             <TileLayer
@@ -81,13 +80,22 @@ export default class MainMap extends React.Component {
                             />
                         </BaseLayer>
 
-                        <BaseLayer name="OpenTopoMap">
-                            <TileLayer
-                                url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
-                                attribution='attribution: Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-                            />
-                        </BaseLayer>
+                        {/*<BaseLayer name="OpenTopoMap">*/}
+                        {/*    <TileLayer*/}
+                        {/*        url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"*/}
+                        {/*        attribution='attribution: Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'*/}
+                        {/*    />*/}
+                        {/*</BaseLayer>*/}
 
+                        <BaseLayer name="Bank Danych o Lasach">
+                        <WMSTileLayer
+                            attribution='&amp; Bank Danych o Lasach &copy; <a href="https://www.bdl.lasy.gov.pl/portal/">Bank Danych o Lasach</a> '
+                            format="image/png"
+                            layers={[1,3,5]}
+                            url="https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL/mapserver/WMSServer"
+                        />
+
+                        </BaseLayer>
 
                         <Overlay checked name="Wyręby">
                             <FeatureGroup color="purple">
