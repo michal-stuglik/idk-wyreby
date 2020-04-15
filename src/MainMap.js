@@ -94,7 +94,54 @@ export default class MainMap extends React.Component {
                             layers={[1,3,5]}
                             url="https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL/mapserver/WMSServer"
                         />
+                        </BaseLayer>
 
+                        <BaseLayer name="Rezerwaty">
+                            <WMSTileLayer
+                                attribution='&amp; Generalna Dyrekcja Ochrony Środowiska &copy; <a href="http://geoserwis.gdos.gov.pl/mapy/">Generalna Dyrekcja Ochrony Środowiska</a> '
+                                format="image/png"
+                                url="http://sdi.gdos.gov.pl/wms?SERVICE=WMS&VERSION=1.1.1&LAYERS=Rezerwaty"
+                            />
+                        </BaseLayer>
+
+                        <BaseLayer name="Parki Krajobrazowe">
+                            <WMSTileLayer
+                                attribution='&amp; Generalna Dyrekcja Ochrony Środowiska &copy; <a href="http://geoserwis.gdos.gov.pl/mapy/">Generalna Dyrekcja Ochrony Środowiska</a> '
+                                format="image/png"
+                                url="http://sdi.gdos.gov.pl/wms?SERVICE=WMS&VERSION=1.1.1&LAYERS=ParkiKrajobrazowe"
+                            />
+                        </BaseLayer>
+
+                        <BaseLayer name="Parki Narodowe">
+                            <WMSTileLayer
+                                attribution='&amp; Generalna Dyrekcja Ochrony Środowiska &copy; <a href="http://geoserwis.gdos.gov.pl/mapy/">Generalna Dyrekcja Ochrony Środowiska</a> '
+                                format="image/png"
+                                url="http://sdi.gdos.gov.pl/wms?SERVICE=WMS&VERSION=1.1.1&LAYERS=ParkiNarodowe"
+                            />
+                        </BaseLayer>
+
+                        <BaseLayer name="Obszary Chronionego Krajobrazu">
+                            <WMSTileLayer
+                                attribution='&amp; Generalna Dyrekcja Ochrony Środowiska &copy; <a href="http://geoserwis.gdos.gov.pl/mapy/">Generalna Dyrekcja Ochrony Środowiska</a> '
+                                format="image/png"
+                                url="http://sdi.gdos.gov.pl/wms?SERVICE=WMS&VERSION=1.1.1&LAYERS=ObszaryChronionegoKrajobrazu"
+                            />
+                        </BaseLayer>
+
+                        <BaseLayer name="Natura 2000 - obszary ptasie">
+                            <WMSTileLayer
+                                attribution='&amp; Generalna Dyrekcja Ochrony Środowiska &copy; <a href="http://geoserwis.gdos.gov.pl/mapy/">Generalna Dyrekcja Ochrony Środowiska</a> '
+                                format="image/png"
+                                url="http://sdi.gdos.gov.pl/wms?SERVICE=WMS&VERSION=1.1.1&LAYERS=ObszarySpecjalnejOchrony"
+                            />
+                        </BaseLayer>
+
+                        <BaseLayer name="Natura 2000 - obszary siedliskowe">
+                            <WMSTileLayer
+                                attribution='&amp; Generalna Dyrekcja Ochrony Środowiska &copy; <a href="http://geoserwis.gdos.gov.pl/mapy/">Generalna Dyrekcja Ochrony Środowiska</a> '
+                                format="image/png"
+                                url="http://sdi.gdos.gov.pl/wms?SERVICE=WMS&VERSION=1.1.1&LAYERS=SpecjalneObszaryOchrony"
+                            />
                         </BaseLayer>
 
                         <Overlay checked name="Wyręby">
