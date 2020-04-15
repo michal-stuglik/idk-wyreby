@@ -68,6 +68,32 @@
           22.33,49.24
         ]
       }
+    },{
+      "type": "Feature",
+      "properties": {
+        "title": "Drogi zrywkowe",
+        "description": "Drogi zrywkowe Pogórze Przemyskie, 2018",
+        "popupContent": "<div><h2>Drogi zrywkowe</h2><div class='divImg'><a target='_blank' href='https://photos.google.com/u/2/album/AF1QipN-QhtO2R7uH4Tn3Ce9y8xW-OWVfQ-ua7wMs7Z8/photo/AF1QipN7cq2W-6WDtzz4lLhANqDGzdsAuvEsmLVQ9y5n'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipN-QhtO2R7uH4Tn3Ce9y8xW-OWVfQ-ua7wMs7Z8/photo/AF1QipN7cq2W-6WDtzz4lLhANqDGzdsAuvEsmLVQ9y5n'/></a> <a target='_blank' href='https://photos.google.com/u/2/album/AF1QipN-QhtO2R7uH4Tn3Ce9y8xW-OWVfQ-ua7wMs7Z8/photo/AF1QipNzDstBTAA2PQiSkMhHmJrR3iiTRtNaoMIHVeLA'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipN-QhtO2R7uH4Tn3Ce9y8xW-OWVfQ-ua7wMs7Z8/photo/AF1QipNzDstBTAA2PQiSkMhHmJrR3iiTRtNaoMIHVeLA'/></a></div><div class='divVid'></div><div class='divDesc'><p>Drogi zrywkowe Pogórze Przemyskie, 2018</p></div></div>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.782,49.107
+        ]
+      }
+    },{
+      "type": "Feature",
+      "properties": {
+        "title": "Wycinka i drogi zrywkowe",
+        "description": "Wycinka i drogi zrywkowe",
+        "popupContent": "<div><h2>Wycinka i drogi zrywkowe</h2><div class='divImg'><a target='_blank' href='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipOVSwgchFKk0_sPJum1v4I_W_5GNEAFPcVUqsmH'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipOVSwgchFKk0_sPJum1v4I_W_5GNEAFPcVUqsmH'/></a> <a target='_blank' href='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipOQw0lkOtgdYlivEeZs9_tvoKXAk3m467Y61AyW'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipOQw0lkOtgdYlivEeZs9_tvoKXAk3m467Y61AyW'/></a> <a target='_blank' href='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipNIBZV_kiderPmqpgS8qA3Qp-WqBBVl0ZDpuz9U'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipNIBZV_kiderPmqpgS8qA3Qp-WqBBVl0ZDpuz9U'/></a> <a target='_blank' href='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipNt9-HMJMThdkgBFc6nplifMdjUmkaUL7BZp9tC'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipNt9-HMJMThdkgBFc6nplifMdjUmkaUL7BZp9tC'/></a> <a target='_blank' href='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipPUl5y6CFWjrqkPEqR9WW6_IXHb5RB-Ygvipwxo'><img class='aImg' src='https://photos.google.com/u/2/album/AF1QipNdCLRlrFPuhRr8pAWZnhvR9UkGzdT9OhBnPO_x/photo/AF1QipPUl5y6CFWjrqkPEqR9WW6_IXHb5RB-Ygvipwxo'/></a></div><div class='divVid'></div><div class='divDesc'><p>Wycinka i drogi zrywkowe</p></div></div>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.746,49.136
+        ]
+      }
     }
     ]
 }
