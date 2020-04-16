@@ -88,12 +88,12 @@ export default class MainMap extends React.Component {
                         {/*</BaseLayer>*/}
 
                         <BaseLayer name="Bank Danych o Lasach">
-                        <WMSTileLayer
-                            attribution='&amp; Bank Danych o Lasach &copy; <a href="https://www.bdl.lasy.gov.pl/portal/">Bank Danych o Lasach</a> '
-                            format="image/png"
-                            layers={[1,3,5]}
-                            url="https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL/mapserver/WMSServer"
-                        />
+                            <WMSTileLayer
+                                attribution='&amp; Bank Danych o Lasach &copy; <a href="https://www.bdl.lasy.gov.pl/portal/">Bank Danych o Lasach</a> '
+                                format="image/png"
+                                layers={[1, 3, 5]}
+                                url="https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL/mapserver/WMSServer"
+                            />
                         </BaseLayer>
 
                         <BaseLayer name="Rezerwaty">
