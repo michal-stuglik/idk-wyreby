@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+    nginx:
+        image: nginx:latest
+        container_name: nginx
+        restart: always
+        ports:
+            - 8001:80
+        depends_on:
+            - web
+        volumes:
+            - ./nginx/conf.d:/etc/nginx/conf.d
+
+    web:
+        build: .
+        container_name: react
+        restart: always
+        ports:
+            - 8001
+        command: serve -s build -l 8001
