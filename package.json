@@ -18,7 +18,8 @@
     "react-leaflet-box-zoom": "^1.0.2",
     "react-leaflet-control": "^2.1.2",
     "react-leaflet-coordinates": "^1.0.1",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "serve": "^11.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
