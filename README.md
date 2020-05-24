@@ -13,5 +13,7 @@
 - https://github.com/gitname/react-gh-pages
 - https://pages.github.com/
 - https://ezplatform.com/blog/store-locator-openstreetmap-leaflet-geojson
+- https://stackoverflow.com/questions/12606141/how-would-i-customise-the-look-and-feel-of-the-leaflet-popup
+- https://gis.stackexchange.com/questions/262053/multiple-popup-styles-for-leaflet
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
