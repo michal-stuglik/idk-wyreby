@@ -9,9 +9,16 @@ import {FaInfo} from "react-icons/fa";
 
 const {BaseLayer, Overlay} = LayersControl;
 
+const popUpCustomOptions =
+    {
+        'maxWidth': '401',
+        'width': '401',
+        'className' : 'popupCustom'
+    }
+
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.title) {
-        layer.bindPopup(feature.properties.popupContent);
+        layer.bindPopup(feature.properties.popupContent, popUpCustomOptions);
     }
 }
 

@@ -44,19 +44,29 @@
 
 .divImg {
   float: left;
+  clear: left;
 }
 
 .aImg {
   width: 100px;
   height: 100px;
+  /*margin: 1px;*/
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 .divVid {
   clear: both;
-  margin: 1px;
+  /*margin: 1px;*/
 }
 
 .divDesc {
   clear: both;
-  margin: 1px;
+  /*margin: 1px;*/
+}
+
+.popupCustom .leaflet-popup-tip,
+.popupCustom .leaflet-popup-content-wrapper {
+  background: #e0e0e0;
+  color: #234c5e;
 }
